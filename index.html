@@ -26,8 +26,12 @@
     </script>
 </head>
 <body class="bg-cream text-gray-800 font-sans">
-    <header class="bg-primary text-white py-6 px-8 flex justify-between items-center border-b-2 border-gold sticky top-0 z-50">
-        <div class="text-xl font-cinzel tracking-widest text-goldLight">JAMES SCOTT</div>
+    <!-- Header with Logo -->
+    <header class="bg-primary text-white py-4 px-8 flex justify-between items-center border-b-2 border-gold sticky top-0 z-50 shadow-lg">
+        <div class="flex items-center gap-3">
+            <img src="jamesscottlogo.jpeg" alt="James Scott Logo" class="h-12 w-auto">
+            <div class="text-lg font-cinzel tracking-widest text-goldLight hidden sm:block">JAMES SCOTT</div>
+        </div>
         <nav class="hidden md:flex space-x-8 text-sm uppercase tracking-wider">
             <a href="#home" class="hover:text-gold transition">Home</a>
             <a href="#about" class="hover:text-gold transition">About</a>
@@ -37,100 +41,300 @@
         </nav>
     </header>
 
-    <section id="home" class="py-24 px-8 text-center bg-gray-900 text-white">
-        <h1 class="text-5xl md:text-6xl font-cinzel text-goldLight mb-6">Healthy, Happy Puppies Raised with Love</h1>
-        <p class="text-lg md:text-xl max-w-3xl mx-auto mb-10 text-gray-300">Ethical Family Breeding Focused on Health, Temperament & Lifelong Companionship. At James Scott Family Pet Breeding, every puppy is raised as part of our family from the very beginning.</p>
-        <div class="flex flex-col md:flex-row gap-4 justify-center">
-            <a href="#puppies" class="bg-gold hover:bg-goldLight text-primary px-8 py-4 font-bold transition rounded shadow-lg">View Available Puppies</a>
-            <a href="#contact" class="border border-gold text-gold hover:bg-gold hover:text-white px-8 py-4 font-bold transition rounded">Contact Us</a>
+    <!-- Hero Section -->
+    <section id="home" class="py-32 px-8 text-center bg-gradient-to-b from-gray-900 to-gray-800 text-white relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-10 right-10 w-72 h-72 bg-gold rounded-full blur-3xl"></div>
+            <div class="absolute bottom-0 left-10 w-96 h-96 bg-gold rounded-full blur-3xl"></div>
         </div>
-    </section>
-
-    <section id="about" class="py-20 px-8 max-w-5xl mx-auto">
-        <h2 class="text-4xl font-cinzel text-center mb-12">A Breeder You Can Trust</h2>
-        <div class="grid md:grid-cols-2 gap-12 items-center mb-16">
-            <p class="text-gray-600 leading-relaxed">Finding the right puppy is about much more than appearance—it's about health, temperament, and confidence in the breeder you choose. Our puppies are raised in a clean, loving home environment where they receive daily care, affection, and early socialisation with people and other pets.</p>
-            <p class="text-gray-600 leading-relaxed italic border-l-4 border-gold pl-6">"We believe in honest communication, responsible breeding, and supporting every family throughout their journey."</p>
-        </div>
-        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div class="bg-white p-6 rounded border-t-4 border-gold shadow-sm">
-                <h3 class="font-cinzel text-lg mb-2">Health First</h3>
-                <p class="text-sm text-gray-500">Vet checked, vaccinated, and complete records.</p>
-            </div>
-            <div class="bg-white p-6 rounded border-t-4 border-gold shadow-sm">
-                <h3 class="font-cinzel text-lg mb-2">Loving Home</h3>
-                <p class="text-sm text-gray-500">Confident, well-socialised family companions.</p>
-            </div>
-            <div class="bg-white p-6 rounded border-t-4 border-gold shadow-sm">
-                <h3 class="font-cinzel text-lg mb-2">Carefully Matched</h3>
-                <p class="text-sm text-gray-500">Personalized help finding your perfect match.</p>
-            </div>
-            <div class="bg-white p-6 rounded border-t-4 border-gold shadow-sm">
-                <h3 class="font-cinzel text-lg mb-2">Ongoing Support</h3>
-                <p class="text-sm text-gray-500">Guidance for the lifetime of your pet.</p>
+        <div class="relative z-10 max-w-4xl mx-auto">
+            <h1 class="text-5xl md:text-7xl font-cinzel text-goldLight mb-6 leading-tight">Healthy, Happy Puppies Raised with Love</h1>
+            <p class="text-lg md:text-xl max-w-3xl mx-auto mb-4 text-gray-300 font-light">Ethical Family Breeding Focused on Health, Temperament & Lifelong Companionship</p>
+            <p class="text-md md:text-lg max-w-3xl mx-auto mb-12 text-gray-400 leading-relaxed">At James Scott Family Pet Breeding, every puppy is raised as part of our family from the very beginning. We are committed to responsible breeding practices, early socialisation, and providing healthy, well-adjusted puppies that are ready to become cherished members of their new families.</p>
+            <p class="text-md md:text-lg max-w-3xl mx-auto mb-12 text-gray-400 leading-relaxed">Whether you're searching for your first companion or adding another furry friend to your home, we're here to help you find the perfect match.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#puppies" class="bg-gold hover:bg-goldLight text-primary px-10 py-4 font-bold transition rounded-lg shadow-lg transform hover:scale-105">View Available Puppies</a>
+                <a href="#contact" class="border-2 border-gold text-gold hover:bg-gold hover:text-primary px-10 py-4 font-bold transition rounded-lg transform hover:scale-105">Contact Us</a>
             </div>
         </div>
     </section>
 
-    <section id="puppies" class="py-20 px-8 bg-white">
-        <div class="max-w-6xl mx-auto text-center">
-            <h2 class="text-4xl font-cinzel mb-4">Meet Your New Best Friend</h2>
-            <p class="text-gray-600 mb-12">Browse our available puppies and discover their unique personalities.</p>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <img src="https://www.postfreeonline.com/oc-content/uploads/44/7639.webp" alt="Puppy" class="w-full h-80 object-cover rounded shadow-lg">
-                <img src="https://www.postfreeonline.com/oc-content/uploads/44/7640.webp" alt="Puppy" class="w-full h-80 object-cover rounded shadow-lg">
-                <img src="https://www.postfreeonline.com/oc-content/uploads/44/7641.webp" alt="Puppy" class="w-full h-80 object-cover rounded shadow-lg">
+    <!-- Welcome Section -->
+    <section id="about" class="py-24 px-8 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-5xl font-cinzel text-center text-primary mb-4">A Breeder You Can Trust</h2>
+            <p class="text-center text-gold text-lg mb-16 font-cinzel">Building Lifelong Relationships with Families</p>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center mb-20">
+                <div class="space-y-6">
+                    <p class="text-gray-700 leading-relaxed text-lg">Finding the right puppy is about much more than appearance—it's about health, temperament, and confidence in the breeder you choose.</p>
+                    <p class="text-gray-700 leading-relaxed text-lg">Our puppies are raised in a clean, loving home environment where they receive daily care, affection, and early socialisation with people and other pets. Every puppy receives the attention they deserve to ensure they are confident, friendly, and ready for family life.</p>
+                </div>
+                <div class="bg-gradient-to-br from-gold to-goldLight p-8 rounded-xl shadow-xl">
+                    <p class="text-primary text-lg italic font-light leading-relaxed">
+                        "We believe in honest communication, responsible breeding, and supporting every family throughout their journey. Your puppy isn't just a sale—it's the beginning of a lifelong relationship with us."
+                    </p>
+                    <p class="text-primary font-cinzel text-xl mt-6">— James Scott Family Breeding</p>
+                </div>
             </div>
-            <div class="mt-12 p-8 bg-gray-50 rounded">
-                <h4 class="font-bold mb-4">Every puppy goes home with:</h4>
-                <ul class="grid md:grid-cols-2 lg:grid-cols-3 gap-2 text-sm text-gray-600">
-                    <li>✔ Veterinary Health Check</li>
-                    <li>✔ Vaccination Record</li>
-                    <li>✔ Deworming Schedule</li>
-                    <li>✔ Microchip Registration</li>
-                    <li>✔ Health Certificate</li>
-                    <li>✔ Starter Food & Blanket</li>
-                </ul>
+
+            <!-- Why Families Choose Us -->
+            <h3 class="text-4xl font-cinzel text-center text-primary mb-12">Why Families Choose Us</h3>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white p-8 rounded-xl border-t-4 border-gold shadow-md hover:shadow-xl transition transform hover:-translate-y-2">
+                    <h4 class="font-cinzel text-xl text-primary mb-3">Health Comes First</h4>
+                    <p class="text-gray-600 text-sm leading-relaxed">Every puppy receives age-appropriate vaccinations, regular deworming, veterinary health checks, and a complete health record before joining their forever family.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl border-t-4 border-gold shadow-md hover:shadow-xl transition transform hover:-translate-y-2">
+                    <h4 class="font-cinzel text-xl text-primary mb-3">Raised in a Loving Home</h4>
+                    <p class="text-gray-600 text-sm leading-relaxed">Our puppies grow up surrounded by daily interaction, affection, and early experiences that help build confident, well-socialised companions.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl border-t-4 border-gold shadow-md hover:shadow-xl transition transform hover:-translate-y-2">
+                    <h4 class="font-cinzel text-xl text-primary mb-3">Carefully Matched</h4>
+                    <p class="text-gray-600 text-sm leading-relaxed">We take the time to help each family find a puppy that best suits their home, lifestyle, and expectations.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl border-t-4 border-gold shadow-md hover:shadow-xl transition transform hover:-translate-y-2">
+                    <h4 class="font-cinzel text-xl text-primary mb-3">Ongoing Support</h4>
+                    <p class="text-gray-600 text-sm leading-relaxed">Our relationship doesn't end when your puppy goes home. We're always happy to offer guidance and answer questions as your puppy grows.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="process" class="py-20 px-8 max-w-4xl mx-auto">
-        <h2 class="text-4xl font-cinzel text-center mb-16">Bringing Home Your Puppy Is Easy</h2>
-        <div class="grid md:grid-cols-4 gap-8">
-            <div class="text-center">
-                <div class="text-4xl font-cinzel text-gold mb-2">01</div>
-                <h4 class="font-bold">Browse</h4>
+    <!-- Available Puppies Section -->
+    <section id="puppies" class="py-24 px-8 bg-gradient-to-b from-cream via-white to-cream">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-5xl font-cinzel text-center text-primary mb-4">Meet Your New Best Friend</h2>
+            <p class="text-center text-gray-600 text-lg mb-4">Browse our available puppies and discover their unique personalities.</p>
+            <p class="text-center text-gold font-cinzel mb-16">Each puppy profile includes professional photos, breed information, personality traits, health records, and more.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+                <div class="rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition transform hover:-translate-y-2">
+                    <img src="https://www.postfreeonline.com/oc-content/uploads/44/7639.webp" alt="Available Puppy" class="w-full h-80 object-cover">
+                    <div class="p-6 bg-white">
+                        <h4 class="font-cinzel text-lg text-primary mb-2">Premium Breed</h4>
+                        <p class="text-gray-600 text-sm">Health checked • Vaccinated • Ready for home</p>
+                    </div>
+                </div>
+                <div class="rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition transform hover:-translate-y-2">
+                    <img src="https://www.postfreeonline.com/oc-content/uploads/44/7640.webp" alt="Available Puppy" class="w-full h-80 object-cover">
+                    <div class="p-6 bg-white">
+                        <h4 class="font-cinzel text-lg text-primary mb-2">Premium Breed</h4>
+                        <p class="text-gray-600 text-sm">Health checked • Vaccinated • Ready for home</p>
+                    </div>
+                </div>
+                <div class="rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition transform hover:-translate-y-2">
+                    <img src="https://www.postfreeonline.com/oc-content/uploads/44/7641.webp" alt="Available Puppy" class="w-full h-80 object-cover">
+                    <div class="p-6 bg-white">
+                        <h4 class="font-cinzel text-lg text-primary mb-2">Premium Breed</h4>
+                        <p class="text-gray-600 text-sm">Health checked • Vaccinated • Ready for home</p>
+                    </div>
+                </div>
             </div>
-            <div class="text-center">
-                <div class="text-4xl font-cinzel text-gold mb-2">02</div>
-                <h4 class="font-bold">Contact</h4>
+
+            <div class="text-center mb-16">
+                <a href="#contact" class="inline-block bg-gold hover:bg-goldLight text-primary px-10 py-4 font-bold transition rounded-lg shadow-lg transform hover:scale-105">View Available Puppies</a>
             </div>
-            <div class="text-center">
-                <div class="text-4xl font-cinzel text-gold mb-2">03</div>
-                <h4 class="font-bold">Reserve</h4>
-            </div>
-            <div class="text-center">
-                <div class="text-4xl font-cinzel text-gold mb-2">04</div>
-                <h4 class="font-bold">Welcome</h4>
+
+            <!-- Our Promise -->
+            <div class="bg-white p-12 rounded-xl shadow-xl border-t-4 border-gold">
+                <h3 class="font-cinzel text-3xl text-center text-primary mb-8">Our Promise</h3>
+                <p class="text-center text-gray-600 mb-8 text-lg">Every puppy goes home with everything needed for a happy, healthy start:</p>
+                <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-6">
+                    <div class="text-center">
+                        <p class="text-gold text-2xl mb-2">✔</p>
+                        <p class="text-gray-700 font-semibold text-sm">Veterinary Health Check</p>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-gold text-2xl mb-2">✔</p>
+                        <p class="text-gray-700 font-semibold text-sm">Vaccination Record</p>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-gold text-2xl mb-2">✔</p>
+                        <p class="text-gray-700 font-semibold text-sm">Deworming Schedule</p>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-gold text-2xl mb-2">✔</p>
+                        <p class="text-gray-700 font-semibold text-sm">Microchip Registration</p>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-gold text-2xl mb-2">✔</p>
+                        <p class="text-gray-700 font-semibold text-sm">Health Certificate</p>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-gold text-2xl mb-2">✔</p>
+                        <p class="text-gray-700 font-semibold text-sm">Starter Food Pack</p>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-gold text-2xl mb-2">✔</p>
+                        <p class="text-gray-700 font-semibold text-sm">Comfort Blanket</p>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-gold text-2xl mb-2">✔</p>
+                        <p class="text-gray-700 font-semibold text-sm">Favourite Toy</p>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-gold text-2xl mb-2">✔</p>
+                        <p class="text-gray-700 font-semibold text-sm">Feeding & Care Guide</p>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-gold text-2xl mb-2">✔</p>
+                        <p class="text-gray-700 font-semibold text-sm">Ongoing Support</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="py-20 px-8 bg-primary text-white text-center">
-        <h2 class="text-4xl font-cinzel text-goldLight mb-6">Ready to Meet Your New Family Member?</h2>
-        <div class="max-w-2xl mx-auto">
-            <p class="mb-10 text-gray-400">Whether you have questions about available litters or the adoption process, we're here to help every step of the way.</p>
-            <div class="flex flex-col gap-4">
-                <a href="mailto:info@jamesscottpets.com" class="bg-gold text-primary font-bold py-4 rounded hover:bg-goldLight transition">Email Us</a>
-                <a href="tel:+1000000000" class="border border-gold text-gold font-bold py-4 rounded hover:bg-gold hover:text-white transition">Call Us</a>
+    <!-- Process Section -->
+    <section id="process" class="py-24 px-8 bg-primary text-white">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-5xl font-cinzel text-center text-goldLight mb-4">Bringing Home Your Puppy Is Easy</h2>
+            <p class="text-center text-gray-400 mb-16 text-lg">Our simple, transparent process ensures you feel confident every step of the way</p>
+            
+            <div class="grid md:grid-cols-4 gap-8 mb-12">
+                <div class="text-center">
+                    <div class="bg-gold text-primary w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 font-cinzel text-2xl font-bold shadow-lg">01</div>
+                    <h4 class="font-cinzel text-xl text-goldLight mb-3">Browse Available Puppies</h4>
+                    <p class="text-gray-400 text-sm">View detailed profiles and photos of our available puppies.</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-gold text-primary w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 font-cinzel text-2xl font-bold shadow-lg">02</div>
+                    <h4 class="font-cinzel text-xl text-goldLight mb-3">Contact Us</h4>
+                    <p class="text-gray-400 text-sm">We'll answer your questions and help you choose the right puppy for your family.</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-gold text-primary w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 font-cinzel text-2xl font-bold shadow-lg">03</div>
+                    <h4 class="font-cinzel text-xl text-goldLight mb-3">Reserve Your Puppy</h4>
+                    <p class="text-gray-400 text-sm">Once selected, we'll guide you through the reservation process.</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-gold text-primary w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 font-cinzel text-2xl font-bold shadow-lg">04</div>
+                    <h4 class="font-cinzel text-xl text-goldLight mb-3">Welcome Home</h4>
+                    <p class="text-gray-400 text-sm">Take your new family member home with everything needed for a happy start.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <footer class="py-10 text-center border-t border-gray-200 text-gray-500">
-        <h3 class="font-cinzel text-xl text-primary mb-2">James Scott Family Pet Breeding</h3>
-        <p class="text-sm">Healthy Puppies • Responsible Breeding • Loving Homes</p>
+    <!-- Testimonials Section -->
+    <section class="py-24 px-8 bg-white">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-5xl font-cinzel text-center text-primary mb-4">Happy Families</h2>
+            <p class="text-center text-gray-600 text-lg mb-16">Nothing makes us happier than seeing our puppies become beloved members of wonderful families.</p>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-cream p-8 rounded-xl shadow-md border-l-4 border-gold">
+                    <div class="flex items-center mb-4">
+                        <div class="text-gold text-xl">★★★★★</div>
+                    </div>
+                    <p class="text-gray-700 mb-4 leading-relaxed italic">"Wonderful experience from start to finish. The puppies are healthy, well-socialised, and James provided amazing support. Our family loves our new addition!"</p>
+                    <p class="font-cinzel text-primary font-semibold">— Sarah & Family</p>
+                </div>
+                <div class="bg-cream p-8 rounded-xl shadow-md border-l-4 border-gold">
+                    <div class="flex items-center mb-4">
+                        <div class="text-gold text-xl">★★★★★</div>
+                    </div>
+                    <p class="text-gray-700 mb-4 leading-relaxed italic">"Highly recommended! James is professional, caring, and genuinely invested in the wellbeing of his puppies and their new families."</p>
+                    <p class="font-cinzel text-primary font-semibold">— Michael & Family</p>
+                </div>
+                <div class="bg-cream p-8 rounded-xl shadow-md border-l-4 border-gold">
+                    <div class="flex items-center mb-4">
+                        <div class="text-gold text-xl">★★★★★</div>
+                    </div>
+                    <p class="text-gray-700 mb-4 leading-relaxed italic">"Best decision ever! Our puppy is healthy, happy, and perfectly matched to our family. James continues to be supportive."</p>
+                    <p class="font-cinzel text-primary font-semibold">— Emma & Family</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-24 px-8 bg-gradient-to-b from-cream to-white">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-5xl font-cinzel text-center text-primary mb-16">Frequently Asked Questions</h2>
+            
+            <div class="space-y-6">
+                <details class="bg-white p-8 rounded-xl shadow-md border-l-4 border-gold group cursor-pointer">
+                    <summary class="font-cinzel text-xl text-primary font-semibold flex items-center justify-between">
+                        Are your puppies vaccinated?
+                        <span class="text-gold text-2xl group-open:rotate-180 transition">▼</span>
+                    </summary>
+                    <p class="text-gray-600 mt-4 leading-relaxed">Yes. Every puppy receives age-appropriate vaccinations before going home. You'll receive a complete vaccination record and can continue with your veterinarian's recommended schedule.</p>
+                </details>
+
+                <details class="bg-white p-8 rounded-xl shadow-md border-l-4 border-gold group cursor-pointer">
+                    <summary class="font-cinzel text-xl text-primary font-semibold flex items-center justify-between">
+                        Can I visit the puppies?
+                        <span class="text-gold text-2xl group-open:rotate-180 transition">▼</span>
+                    </summary>
+                    <p class="text-gray-600 mt-4 leading-relaxed">Absolutely! Visits can be arranged by appointment to ensure the best experience for you, your family, and the puppies. This also helps us get to know families and ensure the right match.</p>
+                </details>
+
+                <details class="bg-white p-8 rounded-xl shadow-md border-l-4 border-gold group cursor-pointer">
+                    <summary class="font-cinzel text-xl text-primary font-semibold flex items-center justify-between">
+                        What comes with my puppy?
+                        <span class="text-gold text-2xl group-open:rotate-180 transition">▼</span>
+                    </summary>
+                    <p class="text-gray-600 mt-4 leading-relaxed">Each puppy comes home with: health records, vaccination certificate, care guide, starter food, comfort blanket, favourite toy, microchip information, and ongoing breeder support for life.</p>
+                </details>
+
+                <details class="bg-white p-8 rounded-xl shadow-md border-l-4 border-gold group cursor-pointer">
+                    <summary class="font-cinzel text-xl text-primary font-semibold flex items-center justify-between">
+                        Do you provide after-sale support?
+                        <span class="text-gold text-2xl group-open:rotate-180 transition">▼</span>
+                    </summary>
+                    <p class="text-gray-600 mt-4 leading-relaxed">Absolutely. We're always available to help with advice, guidance, and support after your puppy joins your family. We view this as the beginning of a lifelong relationship, not the end of a transaction.</p>
+                </details>
+
+                <details class="bg-white p-8 rounded-xl shadow-md border-l-4 border-gold group cursor-pointer">
+                    <summary class="font-cinzel text-xl text-primary font-semibold flex items-center justify-between">
+                        What is your breeding philosophy?
+                        <span class="text-gold text-2xl group-open:rotate-180 transition">▼</span>
+                    </summary>
+                    <p class="text-gray-600 mt-4 leading-relaxed">We prioritise health, temperament, and responsible breeding practices above all else. Every puppy is raised with love and early socialisation, and we carefully match puppies to families for long-term success.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-32 px-8 bg-primary text-white relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-20 right-20 w-80 h-80 bg-gold rounded-full blur-3xl"></div>
+        </div>
+        <div class="max-w-3xl mx-auto relative z-10 text-center">
+            <h2 class="text-5xl font-cinzel text-goldLight mb-4">Ready to Meet Your New Family Member?</h2>
+            <p class="text-lg text-gray-400 mb-12 leading-relaxed">We'd love to help you find the perfect puppy. Whether you have questions about available litters, upcoming puppies, or the adoption process, we're here to help every step of the way.</p>
+            
+            <div class="space-y-4 mb-12">
+                <a href="mailto:info@jamesscottpets.com" class="block bg-gold hover:bg-goldLight text-primary font-bold py-4 px-8 rounded-lg transition transform hover:scale-105 shadow-lg">
+                    ✉ Email Us
+                </a>
+                <a href="tel:+1000000000" class="block border-2 border-gold text-gold hover:bg-gold hover:text-primary font-bold py-4 px-8 rounded-lg transition transform hover:scale-105">
+                    📞 Call Us
+                </a>
+                <a href="#" class="block bg-goldLight hover:bg-gold text-primary font-bold py-4 px-8 rounded-lg transition transform hover:scale-105 shadow-lg">
+                    📋 Send an Enquiry
+                </a>
+            </div>
+
+            <p class="text-gray-500 text-sm">Available Monday - Sunday | Quick Response Times</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 text-center border-t-2 border-gold bg-primary text-white">
+        <div class="max-w-5xl mx-auto">
+            <div class="flex justify-center mb-6">
+                <img src="jamesscottlogo.jpeg" alt="James Scott Logo" class="h-12 w-auto opacity-80 hover:opacity-100 transition">
+            </div>
+            <h3 class="font-cinzel text-2xl text-goldLight mb-2">James Scott Family Pet Breeding</h3>
+            <p class="text-goldLight text-sm mb-6 tracking-wide">Healthy Puppies • Responsible Breeding • Loving Homes</p>
+            <div class="border-t border-gold pt-6">
+                <p class="text-gray-400 text-xs">© 2024 James Scott Family Pet Breeding. All rights reserved. | Ethical practices | Lifetime support | Premium care</p>
+            </div>
+        </div>
     </footer>
 
 </body>
